@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHalfBlack"
+    android:orientation="vertical"
+    tools:context="com.brioal.javain82.activity.TipShowActivity">
+
+    <RelativeLayout
+        android:id="@+id/act_tip_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ben_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_sub_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="关闭"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="@color/colorHalfBlack"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHalfBlack"
+        >
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/fra_home_sub_collect_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/home_fra_btn_left_top"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <com.brioal.brioallib.view.CircleHead
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:text="专"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="专题收藏"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fra_home_que_collect_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/home_fra_btn_center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <com.brioal.brioallib.view.CircleHead
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:text="题"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="问题收藏"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fra_home_que_error_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/home_fra_btn_right_top"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <com.brioal.brioallib.view.CircleHead
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:text="错"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="我的错题"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="最近阅读"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorWhite"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorHalfBlack">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorHalfBlack">
+
+            <TextView
+                android:layout_marginTop="100dp"
+                android:id="@+id/fra_home_nodata_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/refesh_tip"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:focusable="false"
+                android:id="@+id/fra_home_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.brioal.javain82.view.MyAppBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHalfBlack"
+    android:fitsSystemWindows="true"
+    tools:context="com.brioal.javain82.activity.QDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorHalfBlack"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="35dp"
+                android:background="@color/colorHalfBlack"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="状态"
+                    android:textColor="@color/colorWhite"/>
+
+
+                <com.brioal.javain82.view.PercentProgressBar
+                    android:id="@+id/question_detail_progressbar"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhite"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/question_detail_all"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="题目总数:0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/question_detail_hasdone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="已做:0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/question_detail_doneright"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="正确:0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/question_detail_doneerror"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="错误:0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatRatingBar
+                    android:id="@+id/question_detail_rate"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:numStars="5"
+                    android:rating="2.5"
+                    android:stepSize="0.5"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhite"/>
+
+                <LinearLayout
+                    android:id="@+id/act_q_detail_netdata_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/question_detail_done_average"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="做过人数:0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/question_detail_doneright_average"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="正确率:0%"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorHalfBlack"/>
+
+            </LinearLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHalfBlack"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/question_detail_ask_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorTrans"
+                android:gravity="center"
+                android:src="@mipmap/ic_turnback"
+                />
+
+            <TextView
+                android:id="@+id/question_detail_tv_currentindex"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1 / 10 "
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"/>
+
+            <ImageButton
+                android:id="@+id/question_detail_btn_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorTrans"
+                android:gravity="center"
+                android:src="@mipmap/ic_tip"
+                android:visibility="gone"
+                />
+
+            <CheckBox
+                android:id="@+id/question_detail_btn_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/question_detail_check"
+                android:button="@null"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_question_detail"/>
+
+
+</com.brioal.javain82.view.MyAppBar>

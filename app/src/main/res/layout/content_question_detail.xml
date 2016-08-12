@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHalfBlack"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.brioal.javain82.activity.QDetailActivity"
+    tools:showIn="@layout/act_q_detail">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/question_detail_viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+    <!--选项选择区-->
+    <LinearLayout
+        android:id="@+id/question_detail_choose_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/question_detail_answer_layoutA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_sub_bg"
+            android:gravity="center">
+
+            <com.brioal.brioallib.view.CircleHead
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                app:text="A"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/question_detail_answer_layoutB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_sub_bg"
+            android:gravity="center">
+
+            <com.brioal.brioallib.view.CircleHead
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                app:text="B"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/question_detail_answer_layoutC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_sub_bg"
+            android:gravity="center">
+
+            <com.brioal.brioallib.view.CircleHead
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                app:text="C"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/question_detail_answer_layoutD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_sub_bg"
+            android:gravity="center">
+
+            <com.brioal.brioallib.view.CircleHead
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                app:text="D"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--收藏,提交答案区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/question_detail_parise"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/ic_parise"
+            android:button="@null"/>
+
+        <TextView
+            android:id="@+id/question_detail_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_sub_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="提交答案"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"/>
+
+        <CheckBox
+            android:id="@+id/question_detail_collect"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/ic_collect"
+            android:button="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

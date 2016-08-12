@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">猿试</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">All</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="forget_pass"><u>忘记密码</u></string>
+    <string name="title_activity_question_list">QuestionListActivity</string>
+    x
+    <string name="refesh_tip"><u>点击刷新</u></string>
+    <string name="title_activity_question_detail">QuestionDetailActivity</string>
+</resources>

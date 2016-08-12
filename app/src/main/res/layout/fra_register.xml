@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHalfBlack"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/register_et_phone"
+            style="@style/LoginFraEtStyle"
+            android:hint="用户名"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            />
+
+
+        <EditText
+            android:id="@+id/register_et_code"
+            style="@style/LoginFraEtStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/login_tv_line_back"
+            android:gravity="center"
+            android:hint="邮箱"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="20sp"/>
+
+
+        <EditText
+            android:id="@+id/register_et_pass"
+            style="@style/LoginFraEtStyle"
+            android:hint="密码"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/register_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/login_btn_back"
+            android:text="注册"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

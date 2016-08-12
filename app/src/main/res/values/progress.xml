@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="roomRatingBar" parent="@android:style/Widget.Holo.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/start_conf_file</item>
+        <item name="android:minHeight">6dp</item>
+        <item name="android:maxHeight">40dp</item>
+    </style>
+</resources>
